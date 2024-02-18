@@ -28,13 +28,13 @@ def teorik():
     st.markdown("""
     **Not:** This analysis is done on a per ASIN basis.    
 
-    **R = P – C ** 
+    **R = P – C** 
     
-    **R: Revenue (USD) **
+    **R: Revenue ($)**
     
-    **P: Price (USD) **
+    **P: Price ($)**
     
-    **C: Cost (USD) ** 
+    **C: Cost ($)** 
     
     P = Selling price of the product in Canada
     
@@ -77,7 +77,7 @@ def price_optimization_page():
         input_data = {}
         col1, col2, col3, col4, col5, col6 = st.columns(6)
         with col1:
-            st.markdown("**Purchase Price from the US($):**")
+            st.markdown("**Purchase Price from US($):**")
             input_data['us_purchase_price'] = st.number_input('', value=39.99 )  
         with col3:
             st.markdown("**Sales Price at Canada($):**")
@@ -91,14 +91,14 @@ def price_optimization_page():
             st.markdown("**Wharehouse Handling Fee($):**")
             input_data['oneamz_fee'] = st.number_input('', value=42.78)  
         with col9:
-            st.markdown("**Sub Category Sales Rank:**")
+            st.markdown("**Sub Category Sales Rank of Product:**")
             input_data['Sub_Sales_Rank'] = st.number_input('', value=4)
         with col11:
-            st.markdown("**Daily Sales Number:**")
+            st.markdown("**Daily Sales Quantity of Product:**")
             input_data['daily_sales'] = st.number_input('', value=48)
         col13, col14, col15, col16,col17,col18 = st.columns(6)
         with col13:
-            st.markdown("**Rewiew Number:**")
+            st.markdown("**Rewiew Num:**")
             input_data['mnumber_of_reviews'] = st.number_input('', value=8904)
         with col15:
             st.markdown("**Seller Number:**")
@@ -108,13 +108,13 @@ def price_optimization_page():
             input_data['rating'] = st.number_input('', value=4.2)
         col19, col20, col21, col22,col23,col24 = st.columns(6)
         with col19:
-            st.markdown("**Optimum Selling Price Calculated for Canada($):**")
+            st.markdown("**Optimum Price for Canada($):**")
             input_data['optimum_price'] = st.number_input('', value=114.41)
         with col21:
             st.markdown("**Net Profit for Seller($):**")
             input_data['Remaining_Profit_to_OneAMZ_Seller'] = st.number_input('', value=22.59)
         with col23:
-            st.markdown("**Net Profit Ratio of Seller(%):**")
+            st.markdown("**Net Profit Ratio (%):**")
             input_data['Net_Profit_Remaining_for_OneAMZ_Seller'] = st.number_input('', value=24.60)
         
         
@@ -126,7 +126,7 @@ def price_optimization_page():
         input_data = {}
         col1, col2, col3, col4, col5, col6 = st.columns(6)
         with col1:
-            st.markdown("**Purchase Price from the US($):**")
+            st.markdown("**Purchase Price from US($):**")
             input_data['us_purchase_price'] = st.number_input('', value=32.99 )  
         with col3:
             st.markdown("**Sales Price at Canada($):**")
@@ -140,14 +140,14 @@ def price_optimization_page():
             st.markdown("**Wharehouse Handling Fee($)):**")
             input_data['oneamz_fee'] = st.number_input('', value=15.75)  
         with col9:
-            st.markdown("**Sub Category Sales Rank:**")
+            st.markdown("**Sub Category Sales Rank of Product:**")
             input_data['Sub_Sales_Rank'] = st.number_input('', value=4)
         with col11:
-            st.markdown("**Daily Sales Number:**")
+            st.markdown("**Daily Sales Number of Product:**")
             input_data['daily_sales'] = st.number_input('', value=174)
         col13, col14, col15, col16,col17,col18 = st.columns(6)
         with col13:
-            st.markdown("**Rewiew Number:**")
+            st.markdown("**Rewiew Num:**")
             input_data['mnumber_of_reviews'] = st.number_input('', value=42352)
         with col15:
             st.markdown("**Seller Number:**")
@@ -157,24 +157,24 @@ def price_optimization_page():
             input_data['rating'] = st.number_input('', value=4.4)
         col19, col20, col21, col22,col23,col24 = st.columns(6)
         with col19:
-            st.markdown("**Optimum Selling Price Calculated for Canada($):**")
+            st.markdown("**Optimum Price for Canada($):**")
             input_data['optimum_price'] = st.number_input('', value=67.46)
         with col21:
             st.markdown("**Net Profit for Seller($):**")
             input_data['Remaining_Profit_to_OneAMZ_Seller'] = st.number_input('', value=11.60)
         with col23:
-            st.markdown("**Net Profit Ratio of Seller(%):**")
+            st.markdown("**Net Profit Ratio (%):**")
             input_data['Net_Profit_Remaining_for_OneAMZ_Seller'] = st.number_input('', value=20.77)
             
         
          # Ürün Bilgilerini Göster
     elif selected_asin == "B0811VD9MY":
-        st.image("B0811VD9MY.jpg", caption="Ürün Resmi", width=160)
+        st.image("B0811VD9MY.jpg", caption="Product Photo", width=160)
         # Kullanıcı girdilerini al
         input_data = {}
         col1, col2, col3, col4, col5, col6 = st.columns(6)
         with col1:
-            st.markdown("**Purchase Price from the US($):**")
+            st.markdown("**Purchase Price from US($):**")
             input_data['us_purchase_price'] = st.number_input('', value=13.39)  
         with col3:
             st.markdown("**Sales Price at Canada($):**")
@@ -188,14 +188,14 @@ def price_optimization_page():
             st.markdown("**Wharehouse Handling Fee($):**")
             input_data['oneamz_fee'] = st.number_input('$', value=13.53)  
         with col9:
-            st.markdown("**Sub Category Sales Rank:**")
+            st.markdown("**Sub Category Sales Rank of Product:**")
             input_data['Sub_Sales_Rank'] = st.number_input('', value=25)
         with col11:
-            st.markdown("**Daily Sales Number:**")
+            st.markdown("**Daily Sales Number of Product:**")
             input_data['daily_sales'] = st.number_input('', value=3)
         col13, col14, col15, col16,col17,col18 = st.columns(6)
         with col13:
-            st.markdown("**Rewiew Number:**")
+            st.markdown("**Rewiew Num:**")
             input_data['mnumber_of_reviews'] = st.number_input('', value=69)
         with col15:
             st.markdown("**Seller Number:**")
@@ -205,13 +205,13 @@ def price_optimization_page():
             input_data['rating'] = st.number_input('', value=2.7)
         col19, col20, col21, col22,col23,col24 = st.columns(6)
         with col19:
-            st.markdown("**Optimum Selling Price Calculated for Canada($):**")
+            st.markdown("**Optimum Price for Canada($):**")
             input_data['optimum_price'] = st.number_input('', value=40.69)
         with col21:
             st.markdown("**Net Profit for Seller($):**")
             input_data['Remaining_Profit_to_OneAMZ_Seller'] = st.number_input('', value=5.08)
         with col23:
-            st.markdown("**Net Profit Ratio of Seller(%):**")
+            st.markdown("**Net Profit Ratio (%):**")
             input_data['Net_Profit_Remaining_for_OneAMZ_Seller'] = st.number_input('', value=14.26)
 
 def Fiyat_Miktar_İlişkisi():
@@ -220,8 +220,8 @@ def Fiyat_Miktar_İlişkisi():
     st.markdown("""
     **About Dataset:**
 
-    - Q: Quantity (
-    - P: Price 
+    - **Q:** Quantity 
+    - **P:** Price 
 
     **Model: P = β₀ + β₁ * Q**
     """)
